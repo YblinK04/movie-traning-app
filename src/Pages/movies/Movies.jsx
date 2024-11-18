@@ -1,7 +1,7 @@
 
 import {Container, Heading, Grid, Skeleton, Select, Flex } from "@chakra-ui/react"
 import { useEffect, useState } from "react"
-import { fetchMovies } from "../../services/Api";
+import { fetchMovies } from "../../services/api";
 import CardComponent from "../../components/CardComponent";
 import PaginationComponent from "../../components/PaginationComponent";
 

@@ -13,7 +13,7 @@ import {
   Badge,
   useToast} from "@chakra-ui/react";
 import { useParams } from "react-router-dom"
-import { fetchCredits, fetchDetails, fetchVideos, imagePath, imagePathOriginal } from "../services/Api";
+import { fetchCredits, fetchDetails, fetchVideos, imagePath, imagePathOriginal } from "../services/api";
 import { CalendarIcon, CheckCircleIcon, SmallAddIcon, TimeIcon } from "@chakra-ui/icons";
 import { minutesTohours, ratingToPercentage, resolveRatingColor } from "../utils/helpers";
 import VideoComponent from "../components/VideoComponent";

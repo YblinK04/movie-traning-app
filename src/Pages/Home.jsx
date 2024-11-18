@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import {Container, Heading, Grid, Flex, Box, Skeleton } from "@chakra-ui/react"
-import { fetchTrending} from "../services/Api"
+import { fetchTrending} from "../services/api"
 import CardComponent from "../components/CardComponent";
 
 const Home = () => {

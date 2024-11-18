@@ -1,6 +1,6 @@
 import { Box, Flex, Image, Text } from "@chakra-ui/react"
 import { Link } from "react-router-dom"
-import { imagePath } from "../services/Api"
+import { imagePath } from "../services/api"
 import { StarIcon } from "@chakra-ui/icons"
   
 

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import {Container, Heading, Flex, Input, Spinner, Grid, Skeleton } from "@chakra-ui/react"
 import CardComponent from "../../components/CardComponent";
-import { searchData } from "../../services/Api";
+import { searchData } from "../../services/api";
 import PaginationComponent from "../../components/PaginationComponent"
 
 const Search = () => {

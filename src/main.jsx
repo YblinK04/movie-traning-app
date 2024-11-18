@@ -5,15 +5,14 @@ import { ChakraProvider, ColorModeScript } from "@chakra-ui/react";
 import App from "./App.jsx";
 import "./index.css";
 import theme from "../theme.js";
-import Home from "./Pages/Home.jsx";
-import Movies from "./Pages/movies/Movies.jsx";
+import Home from "./pages/Home.jsx";
+import Movies from "./pages/movies/Movies.jsx";
 import Shows from "./pages/shows/Shows.jsx";
 import Search from "./pages/search/Search.jsx";
 import DetailsPage from "./pages/DetailsPage.jsx";
-import { AuthProvider } from "./context/AuthProvider.jsx";
-import Watchlist from "./Pages/Watchlist.jsx";
+import { AuthProvider } from "./context/authProvider.jsx";
+import Watchlist from "./pages/Watchlist.jsx";
 import Protected from "./components/routes/Protected.jsx";
-
 const router = createBrowserRouter([
   {
     path: "/",
