@@ -57,7 +57,7 @@ export const fetchTvSeries = async (page, sortBy) => {
   return res?.data;
 };
 
-// SEARCH
+
 
 export const searchData = async (query, page) => {
   const res = await axios.get

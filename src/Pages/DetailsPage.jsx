@@ -35,19 +35,7 @@ const DetailsPage = () => {
   const [loading, setLoading] = useState(true);
   const [isInWatchlist, setIsInWatchlist] = useState(false);
 
-  // useEffect (() => {
-  //   fetchDetails(type, id)
-  //   .then((res) => {
-  //     console.log(res, 'res')
-  //     setDetails(res)
-  //   }).catch((err) => {
-  //     console.log(err, 'err')
-  //   }).finally(() => {
-  //     setLoading(false)
-  //   });
-  
-  // }, [type, id]);
-
+ 
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -57,14 +45,14 @@ const DetailsPage = () => {
           fetchVideos(type, id)
         ]);
 
-        //set details
+        
         setDetails(detailsData)
       
         
-        //set cast
+        
         setCast(creditsData?.cast.slice(0, 10))
       
-      // set video/s
+     
       const video = videosData?.results.find((video) => video?.type === "Trailer" )
       setVideo(video);
       const videos = videosData?.results?.filter((video) => video?.type !== "Trailer")?.slice(0, 10);
@@ -104,9 +92,7 @@ const DetailsPage = () => {
       overview: details?.overview,
     };
 
-    //console.log(data, "data")
-
-    //addDocument("watchlist", data);
+    
 
     const dataId = details?.id?.toString();
     await addToWatchlist(user?.uid, dataId, data);
