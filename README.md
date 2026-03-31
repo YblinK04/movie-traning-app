@@ -1,8 +1,61 @@
-# React + Vite
+🎬 Movie Library App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Современное веб-приложение для поиска и просмотра информации о фильмах и сериалах. Проект предоставляет актуальные списки
+трендов, детальную информацию о кинолентах и персональные возможности через авторизацию.
 
-Currently, two official plugins are available:
+🚀 Основные функции
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Тренды на главной: Список самых актуальных фильмов за день или неделю.
+
+Детальная страница фильма: Постер, описание, рейтинг и каст (фотографии актеров).
+
+Медиа-контент: Просмотр трейлеров и видео с YouTube прямо в приложении.
+
+TV Shows: Отдельный раздел, посвященный сериалам.
+
+Умный поиск: Возможность найти любой фильм по названию.
+
+Авторизация: Полноценная регистрация и вход в систему через Firebase.
+
+🛠 Стек технологий
+
+Frontend: React 18 + Vite (быстрая сборка).
+
+UI Framework: Chakra UI — для адаптивного и красивого интерфейса.
+
+Анимации: Framer Motion.
+
+Routing: React Router DOM v6.
+
+API Client: Axios для получения данных о фильмах.
+
+Backend / Auth: Firebase (Authentication).
+
+Styling: Emotion (Styled components).
+
+📦 Установка и запуск
+Клонируйте репозиторий:
+bash
+git clone https://github.com
+cd movie-library
+Используйте код с осторожностью.
+
+Установите зависимости:
+bash
+npm install
+Используйте код с осторожностью.
+
+Настройте Firebase:
+Создайте файл .env в корне проекта и добавьте свои ключи:
+env
+VITE_FIREBASE_API_KEY=your_key
+VITE_FIREBASE_AUTH_DOMAIN=your_domain
+VITE_FIREBASE_PROJECT_ID=your_id
+
+# и другие необходимые переменные для API фильмов
+
+Используйте код с осторожностью.
+
+Запустите проект:
+bash
+npm run dev

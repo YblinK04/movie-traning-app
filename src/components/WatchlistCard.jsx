@@ -21,7 +21,7 @@ import {
     const { user } = useAuth();
   
     const handleRemoveClick = (event) => {
-      event.preventDefault(); // Prevent the default behavior (link redirection)
+      event.preventDefault(); 
       removeFromWatchlist(user?.uid, item.id).then(() => {
         setWatchlist((prev) => prev.filter((el) => el.id !== item.id));
       });

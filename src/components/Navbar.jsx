@@ -50,7 +50,7 @@ const Navbar = () => {
             </Box>
           </Link>
 
-          {/* DESKTOP */}
+         
           <Flex
             gap="4"
             alignItems={"center"}
@@ -90,7 +90,7 @@ const Navbar = () => {
             )}
           </Flex>
 
-          {/* Mobile */}
+         
           <Flex
             display={{ base: "flex", md: "none" }}
             alignItems={"center"}
