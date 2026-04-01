@@ -51,5 +51,5 @@ npm run dev
 
 ## Скриншоты приложения
 
-![Главный экран](./assets/screen1.png)
-![Страница фильма](./assets/screen3.png)
+![Главный экран](./src/assets/screen1.png)
+![Страница фильма](./src/assets/screen3.png)
