@@ -7,7 +7,6 @@ export const imagePathOriginal ="https://image.tmdb.org/t/p/original/"
 const baseUrl = "https://api.themoviedb.org/3";
 const apiKey = import.meta.env.VITE_API_KEY;
 
-// TRENDING
 export const fetchTrending = async (timeWindow = "day") => {
   const { data } = await axios.get(
     `${baseUrl}/trending/all/${timeWindow}?api_key=${apiKey}`
@@ -16,14 +15,12 @@ export const fetchTrending = async (timeWindow = "day") => {
   return data?.results;
 };
 
-// MOVIES & SERIES - details 
 
 export const fetchDetails = async (type, id) => {
   const res = await axios.get(` ${baseUrl}/${type}/${id}?api_key=${apiKey}`)
   return res?.data;
 }
 
-// CREDITS
 
 export const fetchCredits = async (type, id) => {
   const res = await axios.get
@@ -33,7 +30,6 @@ export const fetchCredits = async (type, id) => {
 } 
 
 
-// Videos
 
 export const fetchVideos = async (type, id) => {
   const res = await axios.get
@@ -42,7 +38,6 @@ export const fetchVideos = async (type, id) => {
  return res?.data;
 }
 
-// DISCOVER
 
 export const fetchMovies = async (page, sortBy) => {
   const res = await axios.get(
